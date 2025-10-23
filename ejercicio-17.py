@@ -66,13 +66,25 @@
 
 #6 === ingresar 8 notas y mostrar la mas alta y la mas baja ===
 
-notas = []
+# notas = []
 
-for i in range(1, 9):
-    nota = float(input(f"ingresa nota {i}:"))
-    notas.append(nota)
+# for i in range(1, 9):
+#     nota = float(input(f"ingresa nota {i}:"))
+#     notas.append(nota)
 
-notaMayor = max(notas)
-notaMenor = min(notas)
+# notaMayor = max(notas)
+# notaMenor = min(notas)
 
-print(f"Nota mayor: {notaMayor}\nNota menor: {notaMenor}")
+# print(f"Nota mayor: {notaMayor}\nNota menor: {notaMenor}")
+
+#7 === pedir 10 numeros y luego ordenar de mayor a menor ===
+
+numeros = []
+
+for i in range(1, 11):
+    numero = int(input(f"ingresa numero {i}:"))
+    numeros.append(numero)
+
+numeros.sort()
+
+print(f"numero ordenados\n{numeros}")
