@@ -39,16 +39,27 @@
 # promedio = sumaTotal / 6
 # print(f"Promedio total de edades {promedio}")
 
-#5 === guardar 10 numero en un arreglo y mostrar solo los pares ===
+#4 === guardar 10 numero en un arreglo y mostrar solo los pares ===
 
-numeros = [14, 11, 45, 36, 25, 20, 80, 13, 50, 40]
-pares = []
+# numeros = [14, 11, 45, 36, 25, 20, 80, 13, 50, 40]
+# pares = []
 
-for numero in numeros:
-    isPar = numero % 2
-    if isPar == 0:
-        pares.append(numero)
+# for numero in numeros:
+#     isPar = numero % 2
+#     if isPar == 0:
+#         pares.append(numero)
 
-print("\n NUMEROS PARES:")
-for par in pares:
-    print(par)
+# print("\n NUMEROS PARES:")
+# for par in pares:
+#     print(par)
+
+#5 === leer 5 nombres y luego busque si el nombre ingresado esta en la lista ===
+
+listaDeNombres = ["maria", "jorge", "stiven", "sebastian", "salome"]
+
+nombre = input("Ingresa nombre a buscar: ")
+
+if nombre in listaDeNombres:
+    print("Nombre encontrado")
+else:
+    print("Nombre no fue encontrado")
