@@ -4,4 +4,4 @@ nota2 = int(input("ingresa nota 2: "))
 nota3 = int(input("ingresa nota 3: "))
 suma = nota1 + nota2 + nota3
 resultado = suma / 3
-print("tus promedio de ")
+print(f"tu promedio de notas es {resultado}")
