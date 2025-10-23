@@ -55,11 +55,24 @@
 
 #5 === leer 5 nombres y luego busque si el nombre ingresado esta en la lista ===
 
-listaDeNombres = ["maria", "jorge", "stiven", "sebastian", "salome"]
+# listaDeNombres = ["maria", "jorge", "stiven", "sebastian", "salome"]
 
-nombre = input("Ingresa nombre a buscar: ")
+# nombre = input("Ingresa nombre a buscar: ")
 
-if nombre in listaDeNombres:
-    print("Nombre encontrado")
-else:
-    print("Nombre no fue encontrado")
+# if nombre in listaDeNombres:
+#     print("Nombre encontrado")
+# else:
+#     print("Nombre no fue encontrado")
+
+#6 === ingresar 8 notas y mostrar la mas alta y la mas baja ===
+
+notas = []
+
+for i in range(1, 9):
+    nota = float(input(f"ingresa nota {i}:"))
+    notas.append(nota)
+
+notaMayor = max(notas)
+notaMenor = min(notas)
+
+print(f"Nota mayor: {notaMayor}\nNota menor: {notaMenor}")
