@@ -26,12 +26,29 @@
 
 #3 === leer las edades de 6 personas y sacar el promedio ===
 
-edades = []
-sumaTotal = 0
+# edades = []
+# sumaTotal = 0
 
-for i in range(1, 7):
-    edad = int(input(f"edad {i}:"))
-    edades.append(edad)
+# for i in range(1, 7):
+#     edad = int(input(f"edad {i}:"))
+#     edades.append(edad)
 
-for edad in edades:
-    sumaTotal += edad
+# for edad in edades:
+#     sumaTotal += edad
+
+# promedio = sumaTotal / 6
+# print(f"Promedio total de edades {promedio}")
+
+#5 === guardar 10 numero en un arreglo y mostrar solo los pares ===
+
+numeros = [14, 11, 45, 36, 25, 20, 80, 13, 50, 40]
+pares = []
+
+for numero in numeros:
+    isPar = numero % 2
+    if isPar == 0:
+        pares.append(numero)
+
+print("\n NUMEROS PARES:")
+for par in pares:
+    print(par)
