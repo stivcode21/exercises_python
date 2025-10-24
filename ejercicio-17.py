@@ -1,6 +1,6 @@
 #1 === arreglo con 5 nombres y mostrar cada uno en pantalla ===
 
-# nombres = []
+# Nombres = []
 
 # for i in range(1, 6):
 #     nombre = input(f"nombre {i}:")
