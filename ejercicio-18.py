@@ -50,9 +50,30 @@
 
 #6 mejor calificacion
 
-notas = {"Ana": 3.8, "Carlos": 4.5, "Luisa": 4.0}
+# notas = {"Ana": 3.8, "Carlos": 4.5, "Luisa": 4.0}
 
-mayorNota = max(notas, key=notas.get)
+# mayorNota = max(notas, key=notas.get)
 
-print("El estudiante con la mayor nota es:", mayorNota)
-print("Su nota es:", notas[mayorNota])
+# print("El estudiante con la mayor nota es:", mayorNota)
+# print("Su nota es:", notas[mayorNota])
+
+#7 inventario de productos
+
+inventario = {
+    "pera": {"precio": 1000, "cantidad": 10},
+    "mango": {"precio": 2000, "cantidad": 15},
+    "manzana": {"precio": 1000, "cantidad": 25},
+    "sapote": {"precio": 1500, "cantidad": 15},
+    "piña": {"precio": 3500, "cantidad": 5}
+}
+
+inventarioTotal = 0
+
+for fruta in inventario.values():
+    precioFruta = fruta["precio"]
+    cantidadFruta = fruta["cantidad"]
+
+    subtotal = precioFruta * cantidadFruta
+    inventarioTotal += subtotal
+
+print(f"Precio total del inventario es: {inventarioTotal}")
