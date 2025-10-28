@@ -59,21 +59,33 @@
 
 #7 inventario de productos
 
-inventario = {
-    "pera": {"precio": 1000, "cantidad": 10},
-    "mango": {"precio": 2000, "cantidad": 15},
-    "manzana": {"precio": 1000, "cantidad": 25},
-    "sapote": {"precio": 1500, "cantidad": 15},
-    "piña": {"precio": 3500, "cantidad": 5}
-}
+# inventario = {
+#     "pera": {"precio": 1000, "cantidad": 10},
+#     "mango": {"precio": 2000, "cantidad": 15},
+#     "manzana": {"precio": 1000, "cantidad": 25},
+#     "sapote": {"precio": 1500, "cantidad": 15},
+#     "piña": {"precio": 3500, "cantidad": 5}
+# }
 
-inventarioTotal = 0
+# inventarioTotal = 0
 
-for fruta in inventario.values():
-    precioFruta = fruta["precio"]
-    cantidadFruta = fruta["cantidad"]
+# for fruta in inventario.values():
+#     precioFruta = fruta["precio"]
+#     cantidadFruta = fruta["cantidad"]
 
-    subtotal = precioFruta * cantidadFruta
-    inventarioTotal += subtotal
+#     subtotal = precioFruta * cantidadFruta
+#     inventarioTotal += subtotal
 
-print(f"Precio total del inventario es: {inventarioTotal}")
+# print(f"Precio total del inventario es: {inventarioTotal}")
+
+#8 conversion de lista a diccionario
+
+claves = ["nombre", "edad", "curso"]
+valores = ["Jouler", 25, "Python"]
+
+persona = {}
+
+for i in range(0, 3):
+    persona[claves[i]] = valores[i]
+
+print(persona)
