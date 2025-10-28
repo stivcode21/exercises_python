@@ -55,11 +55,15 @@
 
 #5 === leer 5 nombres y luego busque si el nombre ingresado esta en la lista ===
 
-# listaDeNombres = ["maria", "jorge", "stiven", "sebastian", "salome"]
+# listaDeNombres = []
 
-# nombre = input("Ingresa nombre a buscar: ")
+# for i in range(1, 6):
+#     nombre = input(f"Nombre {i}:")
+#     listaDeNombres.append(nombre)
 
-# if nombre in listaDeNombres:
+# buscarNombre = input("\nIngresa nombre a buscar: ")
+
+# if buscarNombre in listaDeNombres:
 #     print("Nombre encontrado")
 # else:
 #     print("Nombre no fue encontrado")
