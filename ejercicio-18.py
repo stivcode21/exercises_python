@@ -25,15 +25,34 @@
 
 #4 lista de estudiantes
 
-estudiantes = [
-    {"nombre": "juanito", "nota": 4.5},
-    {"nombre": "carlos", "nota": 3.5},
-    {"nombre": "maria", "nota": 3.0},
-    ]
+# estudiantes = [
+#     {"nombre": "juanito", "nota": 4.5},
+#     {"nombre": "carlos", "nota": 3.5},
+#     {"nombre": "maria", "nota": 3.0},
+#     ]
 
-for estudiante in estudiantes:
-    nota = estudiante["nota"]
+# for estudiante in estudiantes:
+#     nota = estudiante["nota"]
 
-    if nota >= 3.5:
-        nombreEstudiante = estudiante["nombre"]
-        print(nombreEstudiante)
+#     if nota >= 3.5:
+#         nombreEstudiante = estudiante["nombre"]
+#         print(nombreEstudiante)
+
+#5 contar ocurrencias
+
+# frase = input("Ingresa un frase aleatoria: ")
+
+# palabras = frase.split()
+
+# for palabra in set(palabras):
+#     counter = palabras.count(palabra)
+#     print(f"la palabra '{palabra}' aparece = {counter}")
+
+#6 mejor calificacion
+
+notas = {"Ana": 3.8, "Carlos": 4.5, "Luisa": 4.0}
+
+mayorNota = max(notas, key=notas.get)
+
+print("El estudiante con la mayor nota es:", mayorNota)
+print("Su nota es:", notas[mayorNota])
